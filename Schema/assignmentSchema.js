@@ -2,7 +2,14 @@ const mongoose = require('mongoose')
 
 const assignment = mongoose.Schema({
 
-
+    name:{
+        type:String,
+        required:true
+    },
+    publishDate:{
+        type:Date,
+        required:true
+    },
     DueDate:{
         type:Date,
         required:true
